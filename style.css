@@ -37,3 +37,42 @@ main{display:flex;flex-direction:column}
 .nav{padding-top:10px;padding-bottom:10px}
 .brand img{width:58px;height:58px}
 @media(max-width:600px){.section{padding-top:46px;padding-bottom:46px}.section h2{font-size:31px}.categories a{min-height:unset}}
+
+/* Mobile layout polish based on the reference screenshot */
+@media(max-width:600px){
+  .nav{padding:10px 5%;min-height:82px}
+  .brand{gap:10px;min-width:0}
+  .brand img{width:48px;height:48px;flex:0 0 48px}
+  .brand b{font-size:14px;letter-spacing:.5px;white-space:nowrap}
+  .brand small{font-size:10px}
+  .hero{padding:34px 6% 30px;gap:20px;min-height:0}
+  .hero h1{font-size:clamp(34px,8.4vw,43px);line-height:1.13;letter-spacing:-1px;margin:12px 0 14px}
+  .hero p{font-size:15px;line-height:1.65}
+  .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0 12px}
+  .actions .btn{padding:13px 8px;font-size:14px;white-space:normal}
+  .micro{font-size:10px;letter-spacing:1px;line-height:1.8}
+  .hero-visual{min-height:0;margin-top:10px}
+  .visual-card{height:auto;aspect-ratio:1.45;min-height:190px;max-height:250px;border-radius:22px}
+  .india-word{font-size:clamp(42px,12vw,58px);left:18px;top:24px;letter-spacing:-3px}
+  .ribbon{top:42%;width:78%;left:-5%;height:18px}
+  .bars{right:14px;bottom:30px;height:38%;gap:5px}
+  .bars i{width:clamp(17px,5vw,23px)}
+  .bars i:nth-child(1){height:32%}.bars i:nth-child(2){height:49%}.bars i:nth-child(3){height:70%}.bars i:nth-child(4){height:100%}
+  .coins{right:48px;bottom:14px}
+  .coin{width:25px;height:10px}.coin.tall{height:15px}
+  .rupee{right:13px;bottom:15px;width:44px;height:44px;font-size:23px;border-width:4px}
+  .visual-label{left:18px;bottom:18px;padding:6px 9px;font-size:8px;letter-spacing:1px}
+  .section{padding:38px 6%}
+  .head{margin-bottom:18px}
+  .section h2{font-size:29px}
+  .categories,.analysis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .categories a{padding:15px 13px;min-height:110px;border-radius:13px}
+  .categories a b{font-size:15px;gap:6px;flex-wrap:wrap}
+  .categories a span{font-size:11px;line-height:1.45}
+  .categories a b::after{font-size:17px}
+  .yt-head{padding:18px}
+  .yt-head h3{font-size:23px}
+  .yt-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .yt-actions .btn{width:auto;padding:12px 8px;font-size:13px}
+}
+@media(max-width:360px){.actions,.yt-actions{grid-template-columns:1fr}.categories,.analysis{grid-template-columns:1fr}.brand b{font-size:12px}}

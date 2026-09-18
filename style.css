@@ -76,3 +76,25 @@ main{display:flex;flex-direction:column}
   .yt-actions .btn{width:auto;padding:12px 8px;font-size:13px}
 }
 @media(max-width:360px){.actions,.yt-actions{grid-template-columns:1fr}.categories,.analysis{grid-template-columns:1fr}.brand b{font-size:12px}}
+
+/* Final mobile refinements: compact category cards and video panel */
+@media(max-width:600px){
+  #categories .head{align-items:center;margin-bottom:16px}
+  #categories .head>div{display:flex;flex-direction:column}
+  #categories .head .eyebrow{font-size:9px;letter-spacing:2.5px}
+  #categories .section-title-link{font-size:13px;white-space:nowrap}
+  .categories a{min-height:126px;padding:14px 13px;display:flex;flex-direction:column;justify-content:flex-start;gap:10px}
+  .categories a b{display:flex;align-items:center;flex-wrap:nowrap;gap:6px;font-size:15px;line-height:1.35}
+  .categories a b::after{font-size:17px;flex:0 0 auto}
+  .categories a span{font-size:11px;line-height:1.45;margin-top:0}
+  #videos .head{align-items:center}
+  .youtube-panel{border-radius:16px}
+  .yt-head{padding:16px}
+  .yt-head h3{font-size:21px}
+  .yt-head p{font-size:13px;line-height:1.5}
+  .yt-frame{aspect-ratio:16/9}
+}
+@media(max-width:360px){
+  .categories a{min-height:unset}
+  .categories a b{font-size:14px}
+}

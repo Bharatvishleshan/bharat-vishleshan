@@ -129,3 +129,7 @@ main{display:flex;flex-direction:column}
   .categories a .category-title{font-size:13px}
   #videos .yt-actions{grid-template-columns:1fr}
 }
+
+.embed-fallback{margin:12px 18px 18px;color:#6b7b90;font-size:13px;text-align:center}
+.embed-fallback a{color:#1769e8;font-weight:700;text-decoration:none}
+.embed-fallback a:hover{text-decoration:underline}
